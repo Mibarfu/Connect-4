@@ -1,0 +1,23 @@
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    color:white;
+    gap:1rem;
+}
+.enabled-sound-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+    .enabled-sound-button:hover,
+    .restart-game-button:hover,
+    .movement-back-button:hover {
+        color: aquamarine;
+        cursor: pointer;
+    }
+    .sound-off-button {
+        display: none;
+    }

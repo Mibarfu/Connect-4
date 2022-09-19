@@ -1,0 +1,53 @@
+.zone-rounds * {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.zone-rounds {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    
+}
+    .round-text {
+        color: #8d8d8d;;
+    }    
+    .round-indicators {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: max-content;
+        height: 100%;
+        user-select: none;
+    }
+        .rounds-indicators-player1,
+        .rounds-indicators-player2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+            .round-number-indicator{
+                width: 1rem;
+                aspect-ratio: 1;
+                border: 2px solid;
+                border-radius: 50%;
+                font-size: 0.5rem;
+                text-align: center;
+                line-height: 1rem;
+                user-select: none;
+                cursor: default;
+            }
+                .round-number-indicator-player1 {
+                    border-color: #45b9f3;
+                }
+                .round-number-indicator-player2 {
+                    border-color: #f33f3d;
+                }
+
+                .round-number-indicator-set {
+                    background-color: rgb(218, 153, 35);
+                }

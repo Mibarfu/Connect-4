@@ -1,0 +1,104 @@
+.modal {
+    position: fixed; 
+    z-index: 2; 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+    .winner-modal-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .winner-avatar-name {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: fit-content;
+            height: fit-content;
+            color: white;
+            text-shadow: 2px 2px 2px black;
+        }
+            .trophy-left {
+                position:absolute;
+                top: 4rem;
+                left: -1rem;
+                transform: rotateZ(-15deg);
+            }
+            .trophy-right {
+                position:absolute;
+                top: 4rem;
+                left: 6.5rem;
+                transform: rotateZ(15deg);
+            }
+                .trofhy-left-righ-hidden {
+                    visibility: hidden;
+                }
+            .winner-avatar-player-2-hidden {
+                display:none;
+            }
+        .winner-message {
+            position: absolute;
+                z-index: 1;
+                top: -4rem;
+                font-size: 2.5rem;
+
+                animation-name: winner;
+                animation-duration: .6s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse;
+                animation-timing-function: linear; 
+                
+            }
+                @keyframes winner {
+                    from {font-size: 2.5rem;}
+                    to {font-size: 2.7rem;}
+                }
+            .winner-name{
+                top: 7.5rem;
+                position: absolute;
+                font-weight: 600;
+            }
+
+    .buttons-finish-next {
+        margin-top: 1rem;
+    }
+    .button-finish-round,
+    .button-next-round {
+        width: 8rem;
+        height: 2rem;
+        background-color:  cornflowerblue;
+        border: 2px solid azure;
+        border-radius: 10px;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1rem;
+        cursor: pointer;
+        font-weight: 600;
+        color: white;
+        line-height: 1rem;
+    }
+        .button-finish-round:hover,
+        .button-next-round:hover {
+            background-color: rgb(74, 130, 235);
+        }
+
+.modal-hidden{
+    visibility: hidden;
+}
+.modal-visible{
+    visibility: visible;
+}
+
+
+

@@ -1,0 +1,178 @@
+.menu {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-basis: 1;
+    gap: 1rem;
+
+    padding-left: 2rem;
+    color:white;
+}
+    .disabled-header-element {
+        cursor: default;
+        pointer-events: none;
+        opacity: .5;
+    }
+
+
+    .menu-help, 
+    .menu-configuration, 
+    .button-menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        cursor: pointer;
+        user-select: none;
+    }
+
+        .menu-dropdown-help, 
+        .menu-dropdown-configuration {
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-self: center;
+
+            position: fixed;
+            width: 25rem;
+            top: -30rem;
+            padding: 20px;
+            overflow: hidden;
+            border: 3px solid #ccc;
+            border-radius: 10px;
+            opacity: 0;
+            background-color: #eafcb9;
+
+            font-size: .9rem;
+            color: cadetblue;
+            cursor: default;
+        }
+
+        .hidden-menu-dropdown-configuration {
+            left: -50rem;
+        }
+
+            .menu-help:hover,
+            .menu-configuration:hover {
+                color: aquamarine;
+            }
+            .menu-help:hover .menu-dropdown-help,
+            .menu-configuration:hover .menu-dropdown-configuration {
+                top: 0;
+                height: max-content;
+                opacity: 0.97;
+                transition: opacity 0.7s, top 0.7s;
+            }
+            
+                .menu-dropdown-help h3 {
+                    background-color: #f4fae8;
+                    border-radius: 10px;
+                    padding: 3px;
+                    margin: 0;
+                }
+                .users-config {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content:space-around;
+                }
+                    .selector-border,
+                    .rounds-border,
+                    .users-config {
+                        border: 2px solid rgb(192, 192, 192);
+                        border-radius: 10px;
+                        padding: 1rem;
+                        margin-bottom: 1rem;
+                    }
+                    .user-config-1,
+                    .user-config-2 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                        .select-avatar-config{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                            .button-select-avatar-config {
+                                width: 1rem;
+                                height: 2rem;
+
+                            }
+                                .button-select-avatar-config:active {
+                                    transform: translate(2px, 2px);
+                                }
+
+                                .button-select-avatar-config,
+                                .menu-dropdown-configuration label {
+                                    cursor: pointer;
+                                }
+                        .user-name-config {
+                            margin-top: 1rem;
+                            border: none;
+                            width: 8rem;
+                            height: 1.3rem;
+                            border-radius: 10px;
+                            font-size: .9rem;
+                            text-align: center;
+                            cursor: text;
+                            color: cadetblue;
+                        }
+                    .config-rounds {
+                        width: 3rem;
+                        font-size: 1rem;
+                        text-align: center;
+                        margin-right: 1rem;
+                        border: none;
+                        border-radius: 10px;
+                        color: cadetblue;
+                        -webkit-appearance: none; 
+                    }
+                    
+                    .button-apply-changes {
+                        width: 8rem;
+                        height: 1.7rem;
+                        border: none;
+                        border-radius: 10px;
+                        align-self: flex-end;
+                        background-color: cadetblue;
+                        color: white;
+                        font-size: .9rem;
+                        cursor: pointer;
+                    }
+                        .button-apply-changes:hover {
+                            background-color: rgb(61, 125, 128);
+                        }
+                        .button-apply-changes:active {
+                            transform:scale(0.97);
+                        }
+        .button-menu {
+            align-self: center;
+
+            padding: 0 10px;
+            height: 50%;
+            border: 2px solid white;
+            border-radius: 8px;
+        }
+            .button-menu:hover {
+                align-self: center;
+                color:aquamarine;;
+            }
+            .menu-exit {
+                margin-left: -.5rem;
+            }
+
+            .menu-animation {
+                animation-name: atention;
+                animation-duration: .7s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate; 
+            }
+                @keyframes atention {
+                    from {border: 2px solid gray;}
+                    to {border: 2px solid orange;}
+                }
+
+

@@ -1,0 +1,9 @@
+.rounds-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    gap: 2rem;
+    flex-basis: 1;
+    
+    padding-right: 2rem;
+}

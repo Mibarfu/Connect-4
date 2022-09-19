@@ -1,0 +1,71 @@
+  
+    .sets-zone {
+        display:flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        flex-basis: 15rem;
+        flex-shrink: 0;
+
+        background-color: #465053;
+        color: aliceblue;
+    }
+        .sets-player-1, 
+        .sets-player-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:space-around;
+            flex-basis: 40%;
+            
+            width: 75%;
+            background-color: rgba(209, 203, 189, 0.336);
+            border-radius: 10px;
+            user-select: none;
+        }
+            .avatar-token {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+                .avatar{
+                    margin-top: 7px;
+                    user-select: none;
+                }
+                .token-player {
+                    width: 40px; 
+                    height: 40px;
+                    border-radius: 50%;
+                }
+                    .token-1 {
+                        background-image: radial-gradient(
+                            circle at 71.94% 23.86%, 
+                            #7fd7ff 0, 
+                            #3cb5f2 50%, 
+                            #0094da 100%);
+                     }
+
+                    .token-2 {
+                        background-image: radial-gradient(
+                            circle at 90.56% -7.92%, 
+                            #ff6144 0, 
+                            #fb5140 25%, 
+                            #f23c3c 50%, 
+                            #e92138 75%, 
+                            #e10037 100%);
+                    }
+                    .token-black{
+                        background-image: radial-gradient(
+                            circle at 71.94% 23.86%, 
+                            #424242 0, 
+                            #1f1f1f 50%, 
+                            #000000 100%);
+                    }
+        .player-name, 
+        .player-win {
+            user-select: none;
+        }
+
+
+
+            

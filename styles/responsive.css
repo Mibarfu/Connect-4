@@ -1,0 +1,74 @@
+
+
+
+@media only screen and (max-width: 1150px) {
+    html, 
+    body {
+        font-size: 3vw;
+    }
+        .sets-game {
+            flex-direction: column;
+           
+        }
+            .sets-zone {
+                flex-direction: row;
+                align-items:  center;
+                flex-basis: 0;
+
+                height: min-content;
+                padding: 1rem 0;
+                background-color: #465053;
+
+            }
+                .user-1,
+                .user-2 {
+                    justify-content:space-evenly;
+                }
+                    .avatar-token{
+                        justify-content: flex-end;
+                        height: min-content;
+                    }
+                .game-zone {
+                    padding-top: 2rem;
+                    align-self: center;
+                }
+        .menu-dropdown-help,
+        .menu-dropdown-configuration {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+
+        header {
+            height: 6rem;
+        }
+
+            .menu-rounds-controls {
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+
+                    .button-menu {
+                        padding: 5px 2px;
+                    }
+
+                .rounds-controls {
+                    justify-content: center;
+                    align-items:center;
+
+                    padding-right: 0;
+                    width: 100%;
+                }
+
+                .round-indicators {
+                    justify-content: space-between;
+
+                    height: 2.5rem;
+                }
+
+
+
+
+}
