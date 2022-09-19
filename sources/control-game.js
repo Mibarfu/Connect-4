@@ -28,11 +28,11 @@ let arrayBoard = [];
 
 
 
-const soundTick = new Audio('/sounds/golpe.mp3');
-const soundLinea = new Audio('/sounds/linea.mp3');
-const soundVictory = new Audio('/sounds/victory.mp3');
-const tie = new Audio('/sounds/empate.mp3');
-const algorithmatorSound = new Audio('/sounds/algorithmator.mp3');
+const soundTick = new Audio('sounds/golpe.mp3');
+const soundLinea = new Audio('sounds/linea.mp3');
+const soundVictory = new Audio('sounds/victory.mp3');
+const tie = new Audio('sounds/empate.mp3');
+const algorithmatorSound = new Audio('sounds/algorithmator.mp3');
 
 
 
@@ -337,7 +337,7 @@ const algorithmator = () => {
 
 
 arrayBoardCreate();
-avatars = loadAvatars('/images/avatars/');
+avatars = loadAvatars('images/avatars/');
 
 
 
