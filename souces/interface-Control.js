@@ -225,6 +225,22 @@ function eventDropElementToken() {
 
 
 
+function resizeFreeFallToken() {
+    
+    const heightElemetGameBoard = parseInt(
+        window.getComputedStyle(
+            document.querySelector(".front-game-board")).
+            getPropertyValue('height')
+    );
+
+    const tokenBoardFactor = (heightElemetGameBoard / 6) * 0.57;
+
+    document.querySelectorAll(".token").forEach(element => {
+        element.style.width = tokenBoardFactor.toString() + "px";
+    });
+  
+}
+
 
 
 const loadAvatars = (path) => {
@@ -318,21 +334,7 @@ const setConfigPlayer2ToCPU = (isOnePlayer) => {
 
 }
 
-const resizeFreeFallToken = () => {
-    
-    const heightElemetGameBoard = parseInt(
-        window.getComputedStyle(
-            document.querySelector(".front-game-board")).
-            getPropertyValue('height')
-    );
 
-    const tokenBoardFactor = (heightElemetGameBoard / 6) * 0.57;
-
-    document.querySelectorAll(".token").forEach(element => {
-        element.style.width = tokenBoardFactor.toString() + "px";
-    });
-  
-}
 
 const prepareTokenPlayer = () => {
 
